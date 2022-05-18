@@ -12,7 +12,19 @@
 }
 
 .SkillBox__skill {
+  display: flex;
+  align-items: center;
+}
+
+.SkillBox__skill_svg {
+  height: 24px;
+  width: 24px;
+  fill: $primaryColor;
+}
+
+.SkillBox__skill_title {
   font-family: $openSansFontFamily;
   font-size: 19px;
   line-height: 1.8;
+  list-style-type: none;
 }

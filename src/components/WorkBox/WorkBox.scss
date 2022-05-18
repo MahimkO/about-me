@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.WorkBox__container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.WorkBox__image_container {
+  height: 600px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.WorkBox__image {
+  width: inherit;
+}
+
+.WorkBox__info_container {
+  opacity: 0;
+  transition: opacity 0.23s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.WorkBox__title {
+  font-family: $oswaldFontFamily;
+  font-size: 50px;
+  color: $whiteColor;
+}
+
+.WorkBox__description {
+  font-family: $openSansFontFamily;
+  font-size: 18px;
+  font-style: italic;
+  color: $secondaryColor;
+}

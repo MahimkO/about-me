@@ -75,9 +75,10 @@
   border-radius: 10px;
   border-color: $primaryColor;
   background-color: $primaryColor;
-  color: white;
+  color: $whiteColor;
   font-size: 20px;
   font-family: 'PT Sans', sans-serif;
+  cursor: pointer;
   transition: 0.2s;
   &:hover {
     opacity: 0.5;
@@ -87,14 +88,59 @@
   }
 }
 
+.Main__hello_empty {
+  height: 600px;
+  width: 400px;
+  background-color: $primaryColor;
+}
+
 .Main__skills_container {
+  margin-top: 40px;
+  & > p {
+    text-align: center;
+  }
+}
+
+.Main__skills_title {
+  font-family: $oswaldFontFamily;
+  font-size: 60px;
+}
+
+.Main__skills_text {
+  font-family: $openSansFontFamily;
+  font-size: 24px;
+}
+
+.Main__skills {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
 
-.Main__hello_empty {
-  height: 600px;
-  width: 400px;
-  background-color: $primaryColor;
+.Main__works_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color: $tertiaryColor;
+}
+
+.Main__works_works {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main__works_title {
+  font-family: $oswaldFontFamily;
+  font-size: 65px;
+  color: $whiteColor;
+}
+
+.Main__works_description {
+  font-family: $openSansFontFamily;
+  font-size: 18px;
+  font-style: italic;
+  color: $quaternaryColor;
+  margin: 20px 30px 25px;
 }

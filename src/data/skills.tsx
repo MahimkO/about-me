@@ -46,6 +46,10 @@ export const frontendSkills : Skills = [
     id: 10,
     name: 'CSS3'
   },
+   {
+    id: 11,
+    name: 'TypeScript'
+  },
 ];
 
 export const backendSkills : Skills = [
@@ -57,10 +61,20 @@ export const backendSkills : Skills = [
     id: 2,
     name: 'Express'
   },
-
+  {
+    id: 3,
+    name: 'Sequelize'
+  },
 ];
 
 export const databasesSkills : Skills = [
+  {
+    id: 1,
+    name: 'PostgresQL'
+  },
+];
+
+export const PlanToLearn : Skills = [
   {
     id: 1,
     name: 'Prizma'
@@ -71,10 +85,10 @@ export const databasesSkills : Skills = [
   },
   {
     id: 3,
-    name: 'PostgresQL'
+    name: 'Next.JS'
   },
   {
     id: 4,
-    name: 'Sequelize'
+    name: 'Nest.JS'
   },
 ];

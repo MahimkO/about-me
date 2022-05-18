@@ -1,6 +1,8 @@
-import { backendSkills, databasesSkills, frontendSkills } from '../../data/skills';
+import { backendSkills, databasesSkills, frontendSkills, PlanToLearn } from '../../data/skills';
+import { works } from '../../data/works';
 
 import { SkillBox } from '../../components/SkillBox';
+import { WorkBox } from '../../components/WorkBox';
 
 import './Main.scss';
 
@@ -51,9 +53,26 @@ export function Main() {
       </div>
 
       <div className='Main__skills_container'>
-        <SkillBox title='Frontend' skills={frontendSkills}/>
-        <SkillBox title='Backend' skills={backendSkills}/>
-        <SkillBox title='Databases' skills={databasesSkills}/>
+        <p className='Main__skills_title'>Hard skills and development</p>
+        <p className='Main__skills_text'>And some plans to learn something new and especially helpful</p>
+        <div className='Main__skills'>
+          <SkillBox title='Frontend' skills={frontendSkills}/>
+          <SkillBox title='Backend' skills={backendSkills}/>
+          <SkillBox title='Databases' skills={databasesSkills}/>
+          <SkillBox title='Plan to learn' skills={PlanToLearn}/>
+        </div>
+      </div>
+
+      <div className='Main__works_container'>
+        <p className='Main__works_title'>My Works</p>
+        <p className='Main__works_description'>This section is for getting more clearly what is my main point on develop</p>
+        <div className='Main__works_works'>
+          {works.map(work => {
+            return (
+              <WorkBox key={work.id} id={work.id} name={work.name} description={work.description} url={work.url}/>
+            )
+          })}
+        </div>
       </div>
 
     </div>
