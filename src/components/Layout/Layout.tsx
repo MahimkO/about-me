@@ -11,12 +11,12 @@ type Props = {
 
 export const Layout : FC<Props> = ({ children }) => {
   return (
-    <>
+    <div className='Layout__container'>
       <Header />
-      <div>
+      <div className='Layout__children_container'>
         {children}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

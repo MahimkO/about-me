@@ -1,0 +1,100 @@
+@import '../../_variables.scss';
+
+.Main__container {
+  max-width: 1320px;
+}
+
+.Main__hello_container {
+  display: flex;
+  justify-content: center;
+}
+
+.Main__hello_image {
+  max-width: 400px;
+}
+
+.Main__hello_info_container {
+  padding-left: 20px;
+}
+
+.Main__hello_info_name {
+  width: 420px;
+  font-size: 70px;
+  line-height: 1;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.Main__hello_info_position {
+  font-size: 28px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: $primaryColor;
+  margin: 40px 20px 0 20px;
+  // border: 1px solid red;
+}
+
+.Main__hello_info_position_text {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 35px 20px 0 20px;
+  color: $secondaryColor;
+  // border: 1px solid red;
+}
+
+.Main__hello_info_icons {
+  width: 24px;
+  height: 24px;
+  fill: rgb(194, 98, 175);
+  // border: 1px solid blue;
+}
+
+.Main__hello_contacts {
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 45px 20px 0 20px;
+  // border: 1px solid red;
+}
+
+.Main__hello_contacts_contact {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 5px;
+}
+
+.Main__hello_info_btn_container {
+  margin: 35px 20px 0 20px;
+}
+
+.Main__hello_info_button {
+  width: 220px;
+  height: 45px;
+  border-radius: 10px;
+  border-color: $primaryColor;
+  background-color: $primaryColor;
+  color: white;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.Main__skills_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.Main__hello_empty {
+  height: 600px;
+  width: 400px;
+  background-color: $primaryColor;
+}

@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.SkillBox__title {
+  color: $primaryColor;
+  font-family: $oswaldFontFamily;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.SkillBox__skills {
+  margin-top: 10px;
+}
+
+.SkillBox__skill {
+  font-family: $openSansFontFamily;
+  font-size: 19px;
+  line-height: 1.8;
+}
