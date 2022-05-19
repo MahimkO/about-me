@@ -1,5 +1,6 @@
 import { backendSkills, databasesSkills, frontendSkills, PlanToLearn } from '../../data/skills';
 import { works } from '../../data/works';
+import { softSkills } from '../../data/softskills';
 
 import { SkillBox } from '../../components/SkillBox';
 import { WorkBox } from '../../components/WorkBox';
@@ -69,9 +70,50 @@ export function Main() {
         <div className='Main__works_works'>
           {works.map(work => {
             return (
-              <WorkBox key={work.id} id={work.id} name={work.name} description={work.description} url={work.url}/>
+              <WorkBox key={work.id} id={work.id} name={work.name} description={work.description} image={work.image} url={work.url}/>
             )
           })}
+        </div>
+      </div>
+
+      <div className='Main__expertise_container'>
+        <div className='Main__expertise_expertise'>
+          <p>MY SOFT SKILLS</p>
+          <p>Expertise</p>
+          <p>Two decades of hands-on experience and hundreds of millions in spend have yielded a diverse skillset that touches on most every function. This is a partial list.</p>
+          <input className='Main__expertise_resume_button' type='button' value='RESUME'/>
+        </div>
+        <div className='Main__expertise_skills'>
+          <ul>
+            {softSkills.map(skill => {
+              return (
+                <li key={skill.id}>{skill.name}</li>
+              )
+            })}
+          </ul>
+        </div>
+        <div className='Main__expertise_about_me_container'>
+          <p>About me</p>
+          <div>
+            <span>Name:</span>
+            <span>Makhovsky Maxim</span>
+          </div>
+          <div>
+            <span>Age:</span>
+            <span>37 years</span>
+          </div>
+          <div>
+            <span>Location:</span>
+            <span>Moscow</span>
+          </div>
+          <div>
+            <span>I like:</span>
+            <span>To write code and get fun with my team creating something new and absolutly useful</span>
+          </div>
+          <div>
+            <span>I think:</span>
+            <span>I can be useful for both teams frontend or backend</span>
+          </div>
         </div>
       </div>
 

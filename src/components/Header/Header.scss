@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.Header__container {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.Header__icons {
+  color: $primaryColor;
+  transition: 0.25s;
+  &:hover {
+    color: $secondaryColor;
+    cursor: pointer;
+  }
+}

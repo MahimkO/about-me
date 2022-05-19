@@ -63,17 +63,23 @@
   align-items: center;
   gap: 7px;
   margin-top: 5px;
+  & a {
+    color: $primaryColor;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }
 
 .Main__hello_info_btn_container {
   margin: 35px 20px 0 20px;
 }
 
-.Main__hello_info_button {
+.Main__hello_info_button, .Main__expertise_resume_button {
   width: 220px;
   height: 45px;
-  border-radius: 10px;
-  border-color: $primaryColor;
+  border-radius: 8px;
+  border-style: none;
   background-color: $primaryColor;
   color: $whiteColor;
   font-size: 20px;
@@ -128,7 +134,7 @@
 .Main__works_works {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .Main__works_title {
@@ -143,4 +149,59 @@
   font-style: italic;
   color: $quaternaryColor;
   margin: 20px 30px 25px;
+}
+
+.Main__expertise_container {
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  background-color: $tertiaryColor;
+  color: $quaternaryColor;
+  padding-top: 60px;
+  font-size: 19px;
+  font-family: $openSansFontFamily;
+}
+
+.Main__expertise_expertise {
+  width: 400px;
+  & p:first-child, p:nth-child(2) {
+    color: $whiteColor;
+    font-family: $oswaldFontFamily;
+  }
+  & p:nth-child(2) {
+    font-size: 60px;
+    padding: 10px 0 15px 0;
+  }
+  & p:nth-child(3) {
+    padding-top: 15px;
+  }
+  & input {
+    margin-top: 35px;
+  }
+}
+
+.Main__expertise_skills {
+  & > ul > li {
+    margin-top: 7px;
+  }
+}
+
+.Main__expertise_about_me_container {
+  width: 400px;
+  & p:first-child {
+    text-align: center;
+    font-family: $oswaldFontFamily;
+    font-size: 25px;
+    line-height: 30px;
+    color: $whiteColor;
+  }
+  & div {
+    margin-top: 7px;
+    & span:first-child {
+      color: $whiteColor;
+    }
+    & span:nth-child(2) {
+      margin-left: 8px;
+    }
+  }
 }

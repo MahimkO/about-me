@@ -1,19 +1,20 @@
 @import '../../variables';
 
 .WorkBox__container {
-  height: 400px;
+  position: relative;
+  height: 600px;
   width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  // border: 1px solid red;
+  overflow: hidden;
 }
 
 .WorkBox__image_container {
-  height: 600px;
-  width: 400px;
-  overflow: hidden;
+  height: inherit;
+  width: inherit;
 }
 
 .WorkBox__image {
@@ -21,10 +22,21 @@
 }
 
 .WorkBox__info_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 400px;
   opacity: 0;
   transition: opacity 0.23s;
+  background-color: $tertiaryColor;
   &:hover {
-    opacity: 1;
+    opacity: 0.9;
+    border: 1px solid $whiteColor;
   }
 }
 
