@@ -33,7 +33,6 @@
   text-align: center;
   color: $primaryColor;
   margin: 40px 20px 0 20px;
-  // border: 1px solid red;
 }
 
 .Main__hello_info_position_text {
@@ -41,21 +40,18 @@
   font-family: 'PT Sans', sans-serif;
   margin: 35px 20px 0 20px;
   color: $secondaryColor;
-  // border: 1px solid red;
 }
 
 .Main__hello_info_icons {
   width: 24px;
   height: 24px;
-  fill: rgb(194, 98, 175);
-  // border: 1px solid blue;
+  fill: $secondaryColor;
 }
 
 .Main__hello_contacts {
   font-size: 18px;
   font-family: 'PT Sans', sans-serif;
   margin: 45px 20px 0 20px;
-  // border: 1px solid red;
 }
 
 .Main__hello_contacts_contact {
@@ -71,26 +67,33 @@
   }
 }
 
-.Main__hello_info_btn_container {
-  margin: 35px 20px 0 20px;
-}
-
-.Main__hello_info_button, .Main__expertise_resume_button {
+.Main__hello_info_btn_container, .Main__experstise_btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 45px;
+  margin: 35px 20px 0 20px;
+  background-color: $primaryColor;
   border-radius: 8px;
   border-style: none;
-  background-color: $primaryColor;
-  color: $whiteColor;
-  font-size: 20px;
-  font-family: 'PT Sans', sans-serif;
-  cursor: pointer;
-  transition: 0.2s;
-  &:hover {
-    opacity: 0.5;
-  }
-  &:active {
-    opacity: 0.7;
+  & a {
+    height: 45px;
+    width: 220px;
+    color: $whiteColor;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: $openSansFontFamily;
+    line-height: 45px;
+    border-radius: 8px;
+    transition: 0.25s;
+    &:hover {
+      background-color: $secondaryColor;
+    }
+    &:active {
+      background-color: $primaryColor;
+    }
   }
 }
 

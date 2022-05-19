@@ -8,38 +8,38 @@ export type Skills = Skill[];
 export const softSkills : Skills = [
   {
     id: 1,
-    name: 'Brand Development & Advertising'
+    name: 'Teamwork skills'
   },
   {
     id: 2,
-    name: 'Direct-Response Marketing'
+    name: 'Ability to listen to the interlocutor'
   },
   {
     id: 3,
-    name: 'Search Marketing: SEO & PPC'
+    name: 'Work in a short time'
   },
   {
     id: 4,
-    name: 'Digital Video & TV, including Super Bowl'
+    name: 'Leader qualities'
   },
   {
     id: 5,
-    name: 'Streaming & Radio'
+    name: 'Learnability'
   },
   {
     id: 6,
-    name: 'Out-of-Home'
+    name: 'Ability to work both in the office and at home'
   },
   {
     id: 7,
-    name: 'Influencer Marketing: Podcast & YouTube'
+    name: 'Make a positive impact on others'
   },
   {
     id: 8,
-    name: 'Email Marketing, Design & Dev'
+    name: 'Communicable'
   },
   {
     id: 9,
-    name: 'Social Media (Paid & Organic)'
+    name: 'I have beautiful eyes and a smile :)'
   },
 ];

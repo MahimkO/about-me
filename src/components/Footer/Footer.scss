@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.Footer__container {
+  height: 65px;
+  width: 1320px;
+  display: flex;
+  justify-content: space-around;
+  & p {
+    font-family: $oswaldFontFamily;
+    font-size: 22px;
+    color: $secondaryColor;
+    line-height: 65px;
+  }
+}
+
+.Footer__images_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.Footer__icons {
+  color: $secondaryColor;
+  transition: 0.25s;
+  &:hover {
+    color: $primaryColor;
+    cursor: pointer;
+  }
+}

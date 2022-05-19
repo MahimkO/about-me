@@ -18,7 +18,7 @@ export function Main() {
         <div className='Main__hello_info_container'>
           <div className='Main__hello_info_name'>Hello, I'm Max!</div>
           <p className='Main__hello_info_position'>Javascript frontend web-developer</p>
-          <p className='Main__hello_info_position_text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo iusto voluptatum deserunt? Provident illo quia enim nobis laborum nulla labore ullam, maiores cupiditate vitae amet fuga laboriosam magnam id deleniti.</p>
+          <p className='Main__hello_info_position_text'>Glad to see you here! On this site you can see my works, find my contacts and I hope you will get some fun! ENJOY!</p>
           <div className='Main__hello_contacts'>
             <div className='Main__hello_contacts_contact'>
               <svg xmlns="http://www.w3.org/2000/svg" className='Main__hello_info_icons'><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>
@@ -47,7 +47,7 @@ export function Main() {
             </div>
           </div>
           <div className='Main__hello_info_btn_container'>
-            <input className='Main__hello_info_button' type='button' value='Download CV' />
+            <a href="/" download="cat1.jpg">Download CV</a>
           </div>
         </div>
         <div className='Main__hello_empty'></div>
@@ -80,8 +80,10 @@ export function Main() {
         <div className='Main__expertise_expertise'>
           <p>MY SOFT SKILLS</p>
           <p>Expertise</p>
-          <p>Two decades of hands-on experience and hundreds of millions in spend have yielded a diverse skillset that touches on most every function. This is a partial list.</p>
-          <input className='Main__expertise_resume_button' type='button' value='RESUME'/>
+          <p>More than 1 year of hands-on experience and hundreds of millions in spend have yielded a diverse skillset that touches on most every function. This is a partial list.</p>
+          <div className='Main__experstise_btn_container'>
+            <a href="/" download="cat1.jpg">RESUME</a>
+          </div>
         </div>
         <div className='Main__expertise_skills'>
           <ul>

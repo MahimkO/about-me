@@ -20,14 +20,14 @@ export const works = [
     id: 2,
     name: 'Sunrise',
     description: 'Site about something special',
-    image: '/cat1.jpg',
+    image: '/sunrise.jpg',
     url: 'http://google.com',
   },
   {
     id: 3,
     name: 'My own project',
     description: 'Basically site for training skills',
-    image: '/dog1.jpg',
+    image: '/myproject.jpg',
     url: 'http://vk.com',
   },
 ];
