@@ -18,16 +18,16 @@ export const works = [
   },
   {
     id: 2,
-    name: 'Sunrise',
-    description: 'Site about something special',
+    name: 'SolarWind',
+    description: 'My photo album',
     image: '/sunrise.jpg',
     url: 'http://google.com',
   },
   {
     id: 3,
-    name: 'My own project',
+    name: 'My new project',
     description: 'Basically site for training skills',
     image: '/myproject.jpg',
-    url: 'http://vk.com',
+    url: '#',
   },
 ];

@@ -2,7 +2,7 @@
 
 .Footer__container {
   height: 65px;
-  width: 1320px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   & p {
@@ -26,5 +26,23 @@
   &:hover {
     color: $primaryColor;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Footer__container p {
+    line-height: 25px;
+    padding: 10px 0 0 15px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .Footer__container {
+    flex-direction: column;
+    & p {
+      line-height: 25px;
+      padding-top: 40px;
+      padding-left: 15px;
+    }
   }
 }
